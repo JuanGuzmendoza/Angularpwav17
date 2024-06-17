@@ -21,8 +21,15 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/OneSignalSDKWorker.js",
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest",
+              {
+                "glob": "OneSignalSDKWorker.js",
+                "input": "src/",
+                "output": "./onesignal/"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -80,8 +87,15 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
+              "src/OneSignalSDKWorker.js",
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest",
+              {
+                "glob": "OneSignalSDKWorker.js",
+                "input": "src/",
+                "output": "./onesignal/"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -91,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b004d5d7-c962-4c09-910a-143326dd17ba"
   }
 }
